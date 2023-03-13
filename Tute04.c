@@ -12,8 +12,32 @@ int main() {
    scanf("%d", &no1);
    printf("Enter a value for no 2 : ");
    scanf("%d", &no2);
-   printf("%d ", minimum(no1, no2));
-   printf("%d ", maximum(no1, no2));
-   printf("%d ", multiply(no1, no2));
+   printf("%d \n", minimum(no1, no2));
+   printf("%d \n", maximum(no1, no2));
+   printf("%d \n", multiply(no1, no2));
    return 0;
+}
+
+int  minimum(int a,int b){
+   if(a<b){
+      return a;
+   }
+   else{
+      return b;
+   }
+}
+
+int maximum(int a,int b){
+   if(a>b){
+      return a;
+   }
+   else{
+      return b;
+   }
+}
+
+int multiply(int a,int b){
+   int mul;
+   mul=a*b;
+   return mul;
 }
